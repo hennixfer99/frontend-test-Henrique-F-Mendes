@@ -47,7 +47,7 @@ export default function Header() {
         </figure>
       )}
 
-      <Menu open={menuOpen} exit={setMenuOpen} link1={github} link2={linkedin}/>
+      <Menu open={menuOpen} exit={setMenuOpen}/>
     </Container>
   );
 }

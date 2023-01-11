@@ -28,7 +28,7 @@ const Container = styled.div`
         justify-content:start;
         padding-left:15px;
     }
-    .buttonreturn{
+    .button-return{
         text-align: center;
         padding: 0 20px 32px 20px;
         background-color:#DEE2E6;

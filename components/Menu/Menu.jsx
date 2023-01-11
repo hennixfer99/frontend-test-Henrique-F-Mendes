@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import Container from "./Styled";
 
-export default function Menu({open, exit, link1, link2}){
+export default function Menu({open, exit}){
       
 return (
-  <Container className={abrir ? 'active' : null}>
+  <Container className={open ? 'active' : null}>
   <div className="menu-animation">
   <header> 
-  <button className="buttonreturn" onClick={() => sair(false)}>x</button>
+  <button className="button-return" onClick={() => sair(exit)}>x</button>
   </header>
   <main>
       <Link to = "/">
