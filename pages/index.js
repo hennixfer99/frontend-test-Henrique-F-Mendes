@@ -1,10 +1,10 @@
-import Header from "../components/Header/Header";
+import Container from "./styled"
 
 export default function Home() {
   return (
-    <div>
-      <Header/>
-      <h1>Hello, World!</h1>
-    </div>
+    <Container>
+      <main>
+      </main>
+    </Container>
   )
 }

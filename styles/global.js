@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export default createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
 * {
         margin: 0;
         padding: 0;
@@ -8,19 +8,14 @@ export default createGlobalStyle`
         outline: 0; 
     }
     :root {
-        --green: #98B13A;
-        --lightGreen: #B7D251;
-        --blue: #56B297;
-        --lightBlue: #75CEC3;
-        --grey: #E6E6E8;
-        --lightGrey: #F2F2F4;
-        --white: #FFFFFF;
+        --black: #495057;
+        --backColor: #DEE2E6;
         --sucess: #98B13A;
         --negative: #E83F5B;
     }
     body {
         background: var(--white);
-        color: var(--blue);
+        color: var(--black);
     }
     body, input, button {
         font-family: 'inter';
@@ -30,10 +25,11 @@ export default createGlobalStyle`
         font-family: 'nunito';
         font-weight: 700;
     }
-    button {
+    button{
         cursor: pointer;
     }
     a {
         text-decoration: none;
     }
 `
+export default GlobalStyle

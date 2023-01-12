@@ -3,11 +3,11 @@ import menu from "../../imgs/Menu.png";
 import Menu from "../Menu/Menu";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = React.useState(false);
-  const [width, setWidth] = React.useState(window.innerWidth);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [width, setWidth] = useState(601);
   const breakpoint = 600;
 
   function menuAtivo() {
@@ -18,7 +18,7 @@ export default function Header() {
     }
   }
 
-  React.useEffect(() => {
+  useEffect(() => {
     const windowSize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", windowSize);
     return () => {
@@ -30,14 +30,17 @@ export default function Header() {
     <Container>
       {width > breakpoint ? (
         <ul className="buttons-homepage">
-          <Link to="/">
-            <li>Sobre</li>
+          
+          <Link href="/sobre">
+            <button>pagina1</button>
           </Link>
-          <Link to="/projetos">
-            <li>Projetos</li>
+          
+          <Link href="/">
+            <button>pagina2</button>
           </Link>
-          <Link to="/qualificacoes">
-            <li>Qualificações</li>
+
+          <Link href="/2">
+            <button>pagina3</button>
           </Link>
           
         </ul>

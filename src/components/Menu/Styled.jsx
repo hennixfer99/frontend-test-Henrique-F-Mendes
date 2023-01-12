@@ -21,7 +21,7 @@ const Container = styled.div`
         max-height:100%;
     }
     header{
-        background-color: #dee2e6;
+        background-color: var(--backColor);
         height:13vh;
         display:flex;
         align-items: center;
@@ -31,7 +31,7 @@ const Container = styled.div`
     .button-return{
         text-align: center;
         padding: 0 20px 32px 20px;
-        background-color:#DEE2E6;
+        background-color:var(--backColor);
         border-radius: 8px;   
         font-size: 25px;
         height: 20px;
@@ -41,7 +41,7 @@ const Container = styled.div`
     }
     main{
         border: 1.5px solid #ADB5BD;
-        background-color: #dee2e6;
+        background-color: var(--backColor);
         backdrop-filter: blur(5px);
         z-index: 1;
         border-radius: 0 0 8px 8px;
@@ -69,8 +69,7 @@ const Container = styled.div`
         text-align: start;
         list-style: none; 
         opacity: 0;
-        font-weight: 600;
-        color:#495057;
+        font-weight: 600;   
     }
     p{
         font-weight: 600;
@@ -81,8 +80,7 @@ const Container = styled.div`
         border-top: 1.5px solid #adb5bd;
         cursor:pointer;
         text-align: start;
-        opacity: 0;
-        color:#495057;
+        opacity: 0;      
     }
     
     &.active{
