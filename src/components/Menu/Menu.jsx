@@ -11,11 +11,11 @@ return (
   </header>
   <main>
     
-       <li>Sobre</li>
+       <li>page1</li>
   
-       <li>Projetos</li>
+       <li>page2</li>
           
-       <li>Qualificações</li>
+       <li>page3</li>
     
   </main>
   

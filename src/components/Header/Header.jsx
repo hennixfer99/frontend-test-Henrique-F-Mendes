@@ -32,15 +32,15 @@ export default function Header() {
         <ul className="buttons-homepage">
           
           <Link href="/sobre">
-            <button>pagina1</button>
+            <button>page1</button>
           </Link>
           
           <Link href="/">
-            <button>pagina2</button>
+            <button>page2</button>
           </Link>
 
           <Link href="/2">
-            <button>pagina3</button>
+            <button>page3</button>
           </Link>
           
         </ul>
