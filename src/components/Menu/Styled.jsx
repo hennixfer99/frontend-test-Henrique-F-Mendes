@@ -11,7 +11,7 @@ const Container = styled.div`
     bottom: 0;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 2;
     transition: height 1s;
     
     menu::-webkit-scrollbar {
@@ -35,15 +35,16 @@ const Container = styled.div`
         border-radius: 8px;   
         font-size: 25px;
         height: 20px;
-        color: black;
+        color: var(--black);
         border: none;
         cursor: pointer;
     }
     main{
         border: 1.5px solid #ADB5BD;
         background-color: var(--backColor);
+        color: var(--black);
         backdrop-filter: blur(5px);
-        z-index: 1;
+        z-index: 2;
         border-radius: 0 0 8px 8px;
         opacity: 0;    
     }
@@ -70,7 +71,9 @@ const Container = styled.div`
         list-style: none; 
         opacity: 0;
         font-weight: 600;   
+        color: var(--black)
     }
+
     p{
         font-weight: 600;
         height: 40px;

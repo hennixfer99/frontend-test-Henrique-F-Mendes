@@ -1,5 +1,6 @@
 
 import Container from "./Styled";
+import Link from "next/link";
 
 export default function Menu({open, exit}){
       
@@ -11,11 +12,19 @@ return (
   </header>
   <main>
     
-       <li>page1</li>
+
+          <Link href="/">
+            <li>Facts</li>
+          </Link>
+
+          <Link href="/curiosities">
+            <li>Curiosities</li>
+          </Link>
+
+          <Link href="/about">
+            <li>About us</li>
+          </Link>
   
-       <li>page2</li>
-          
-       <li>page3</li>
     
   </main>
   
