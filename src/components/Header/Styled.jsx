@@ -1,17 +1,6 @@
 import styled, {keyframes} from "styled-components";
 
 
-const appearFromLeft = keyframes`
-  from {
-    opacity: 0; 
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-`;
-
 const Container = styled.div`
   display: flex;
   align-items: center;
@@ -21,11 +10,6 @@ const Container = styled.div`
   backdrop-filter: blur(5px);
   width: 100%;
   height: 13vh;
-  h1 {
-    color: white;
-    margin-left: 2%;
-    font-size: 20px;
-  }
   ul{
     list-style: none;
     display: flex;
@@ -58,24 +42,13 @@ const Container = styled.div`
   a {
     text-decoration: none;
   }
-  ul button{
+  button{
     border-bottom: 0px solid black;
     padding: 5px;
     max-height: 100%;
-    color: #495057;
-  }
-  ul button:hover{
-    color: var(--green);
-  }
-  p {
-    color: #4529e6;
   }
   figure{
     width: 100%;
   }
-  img{
-
-  }
-  
 `;
 export default Container;
