@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
   </>)}
   <GlobalStyle/>
   <Header />
-  <div className="darkMode">
+  <div className="dark-mode">
   <input
           className="checkbox"
           type="checkbox"

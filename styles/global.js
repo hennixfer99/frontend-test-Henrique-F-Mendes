@@ -34,13 +34,13 @@ const GlobalStyle = createGlobalStyle`
     a {
         text-decoration: none;
     }
-    .darkMode{
+    .dark-mode{
         display: flex;
         flex-direction: row-reverse;
         justify-content: end;
         margin: 10px 20px 10px 0px;
     }
-    .darkMode p {
+    .dark-mode p {
         margin-left: 5px;
     }
     .checkbox{
@@ -94,13 +94,13 @@ const DarkGlobalStyle = createGlobalStyle`
     a {
         text-decoration: none;
     }
-    .darkMode{
+    .dark-mode{
         display: flex;
         flex-direction: row-reverse;
         justify-content: end;
         margin: 10px 20px 10px 0px;
     }
-    .darkMode p {
+    .dark-mode p {
         margin-left: 5px;
     }
     .checkbox{
